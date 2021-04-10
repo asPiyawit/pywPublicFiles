@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import './myhomepage.dart';
+import './screens/myhomepage.dart';
+import './screens/scn_profile.dart';
+import './screens/scn_contact.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,6 +19,8 @@ class MyApp extends StatelessWidget {
       title: 'Piyawit\'s Portfolio',
       routes: {
         '/': (ctx) => MyHomePage(),
+        '/profile': (ctx) => ScnProfile(),
+        '/contact': (ctx) => ScnContact(),
       },
     );
   }

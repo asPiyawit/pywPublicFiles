@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './widgets/wdg_drawer.dart';
-import './widgets/wdg_pbar.dart';
+import '../widgets/wdg_drawer.dart';
+import '../widgets/wdg_pbar.dart';
 
 class MyHomePage extends StatelessWidget {
   void _showAlertDialog(context) {
@@ -177,7 +177,6 @@ class MyHomePage extends StatelessWidget {
         ),
       ],
     );
-    final double _blockHeight = 300;
     //Widgets
     Widget _textLineWdg(String txt) {
       return Text(
@@ -274,6 +273,7 @@ class MyHomePage extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(
                 height: 20,
@@ -304,8 +304,8 @@ class MyHomePage extends StatelessWidget {
                     maxCrossAxisExtent: 500,
                     childAspectRatio: 3 /
                         2, //(heigh&width ratio 3/2) So the heigh will start with 300 as the width is 200
-                    crossAxisSpacing: 5,
-                    mainAxisSpacing: 5,
+                    crossAxisSpacing: 10,
+                    mainAxisSpacing: 10,
                   ),
                   children: [
                     Container(
@@ -314,22 +314,21 @@ class MyHomePage extends StatelessWidget {
                           Colors.red,
                           'brief',
                           'introduction',
-                          'Former experienced flight attendant who is interested in',
-                          'computer programming and looks forward to be part of',
-                          'Bhatara Progress Co.,Ltd.'),
+                          'Former cabin crew who was affected by the COVID-19 pandemic',
+                          'With passion in computer programming, I\'m looking forward to',
+                          'working in this field of job'),
                     ),
                     Container(
                       alignment: Alignment.topLeft,
-                      height: _blockHeight,
                       child: Column(
                         children: [
                           _mixedBlock(
                               Colors.blue,
                               'general',
                               'strengths',
-                              'Interpersonal, team player, open-minded and positive',
-                              'Experienced in working under pressure and delivering tasks on time',
-                              'Upper-intermediate English skills with TOEIC score of 955'),
+                              '- Interpersonal, open-minded, fast-learning and positive',
+                              '- Experienced in working under pressure and delivering tasks on time',
+                              '- Upper-intermediate English skills with TOEIC score of 955'),
                           Center(
                             child: TextButton(
                               onPressed: () => _showTOEIC(context),
@@ -345,33 +344,44 @@ class MyHomePage extends StatelessWidget {
                     ),
                     Container(
                       alignment: Alignment.topLeft,
-                      height: _blockHeight,
                       child: _mixedBlock(
                           Colors.green,
                           'computer',
                           'skills',
-                          'Decent OOP knowledge, Flutter Framework(Self-taught)',
-                          'Basics of PHP+MySQL, HTML, and Java',
-                          'Learning basics of MS Dynamics 365 and X++'),
+                          '- Decent OOP knowledge, Flutter Framework(Self-taught)',
+                          '- Basics of PHP+MySQL, HTML, Dart, C# and Java',
+                          '- '),
                     ),
                     Container(
                       alignment: Alignment.topLeft,
-                      height: _blockHeight,
                       child: _mixedBlock(
                           Colors.amber,
                           'working',
-                          'experiences',
-                          'Cabin Crew in Business Class at Thai Airways (SEP 2017 - APR 2021)',
-                          'Cabin Crew in Economy Class at Thai Airways (MAR 2014 - AUG 2017)',
+                          'experience',
+                          'Cabin Crew in Business Class at Thai Airways (SEP 2018 - APR 2021)',
+                          'Cabin Crew in Economy Class at Thai Airways (MAR 2014 - AUG 2018)',
                           'Customer Service Agent at Lufthansa (APR 2013 - FEB 2014)'),
                     ),
                     Container(
-                      height: 50,
-                      child: Image.asset(
-                        '../assets/images/hardworker.png',
-                        fit: BoxFit.cover,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage(
+                            '../assets/images/hardworker.png',
+                          ),
+                          fit: BoxFit.cover,
+                        ),
                       ),
-                    )
+                    ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: _mixedBlock(
+                          Colors.purple,
+                          'interests',
+                          '& hobbies',
+                          '- Interested in development and technology',
+                          '- Taking online courses related to computer programming',
+                          '- Learning the latest trends from new apps and games'),
+                    ),
                   ],
                 ),
               ),

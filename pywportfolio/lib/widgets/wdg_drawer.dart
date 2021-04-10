@@ -10,9 +10,7 @@ class WdgDrawer extends StatelessWidget {
       title: Text(
         label,
         style: TextStyle(
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-        ),
+            fontSize: 24, fontWeight: FontWeight.bold, fontFamily: 'Raleway'),
       ),
       onTap: tapHandler,
     );
@@ -54,8 +52,12 @@ class WdgDrawer extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed('/');
             }),
             Divider(),
-            _buildMenuTile('Education', Icons.book_outlined, () {
-              Navigator.of(context).pushReplacementNamed('/');
+            _buildMenuTile('Profile', Icons.info_outline_rounded, () {
+              Navigator.of(context).pushReplacementNamed('/profile');
+            }),
+            Divider(),
+            _buildMenuTile('Contact Me', Icons.contact_page_outlined, () {
+              Navigator.of(context).pushReplacementNamed('/contact');
             }),
             Divider(),
           ],
