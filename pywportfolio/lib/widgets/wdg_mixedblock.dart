@@ -26,7 +26,11 @@ class WdgMixedBlock extends StatelessWidget {
         height: 60,
         child: RichText(
           text: TextSpan(
-            style: TextStyle(letterSpacing: 1.5, fontSize: 38),
+            style: TextStyle(
+              letterSpacing: 1.5,
+              fontSize: 38,
+              color: Colors.black,
+            ),
             children: <TextSpan>[
               TextSpan(
                 text: '$firstWord ',

@@ -33,7 +33,7 @@ class ScnStory extends StatelessWidget {
                 ),
                 Container(
                   child: Image.asset(
-                    '../assets/images/$p',
+                    'assets/images/$p',
                     height: mQSize.size.height * 0.7,
                   ),
                 ),
@@ -129,15 +129,15 @@ class ScnStory extends StatelessWidget {
 
     Widget _storySentence(String t) {
       return Container(
-        padding: EdgeInsets.symmetric(vertical: 5),
-        child: FittedBox(
-          child: Text(
-            t,
-            style: TextStyle(
-              fontSize: 20,
-              fontFamily: "Raleway",
-              color: Colors.white,
-            ),
+        padding: EdgeInsets.symmetric(vertical: 10),
+        child: Text(
+          t,
+          style: TextStyle(
+            fontSize: 22,
+            fontFamily: "Raleway",
+            color: Colors.white,
+            letterSpacing: 1,
+            wordSpacing: 2,
           ),
         ),
       );
@@ -153,7 +153,7 @@ class ScnStory extends StatelessWidget {
               Radius.circular(10),
             ),
             child: Image.asset(
-              '../assets/images/$p',
+              'assets/images/$p',
               height: 130,
             ),
           ),
@@ -208,7 +208,7 @@ class ScnStory extends StatelessWidget {
                         decoration:
                             BoxDecoration(border: Border.all(width: 0.5)),
                         child: Image.asset(
-                          '../assets/images/profilepic.png',
+                          'assets/images/profilepic.png',
                           height: 190,
                         ),
                       ),
@@ -246,7 +246,7 @@ class ScnStory extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.all(10),
                             alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
+                            padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                                 color: Colors.blueGrey[800],
                                 borderRadius: BorderRadius.all(
@@ -278,13 +278,7 @@ class ScnStory extends StatelessWidget {
                                 ),
                                 Divider(),
                                 _storySentence(
-                                    '  I have always equally loved coding and English language.'),
-                                _storySentence(
-                                    'There was a time when I had to decide if I wanted to go on'),
-                                _storySentence(
-                                    'the programmer career path or become a flight attendant. '),
-                                _storySentence(
-                                    'I somehow chose the latter choice because of some conditions back then.'),
+                                    'I have always loved coding and English language equally. There was this tough time when I had to decide if I wanted to go on the programmer career path or become a flight attendant. I somehow chose the latter choice because of some conditions back then.'),
                                 _image('inuniform.jpg')
                               ],
                             ),
@@ -292,7 +286,7 @@ class ScnStory extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.all(10),
                             alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
+                            padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                                 color: Colors.blueGrey[800],
                                 borderRadius: BorderRadius.all(
@@ -309,18 +303,14 @@ class ScnStory extends StatelessWidget {
                             child: Column(
                               children: [
                                 _storySentence(
-                                    'Unfortunately, after 8 years of obtaining experiences in Aviation,'),
-                                _storySentence(
-                                    'the COVID-19 pandemic severely hit the business worldwide.'),
-                                _storySentence(
-                                    'No one is allowed to freely fly internationally anymore.'),
+                                    'Unfortunately, after 8 years of obtaining experiences in Aviation, the COVID-19 pandemic severely hit the business worldwide. No one is allowed to freely fly internationally anymore.'),
                               ],
                             ),
                           ),
                           Container(
                             margin: EdgeInsets.all(10),
                             alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
+                            padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                                 color: Colors.blueGrey[800],
                                 borderRadius: BorderRadius.all(
@@ -337,15 +327,7 @@ class ScnStory extends StatelessWidget {
                             child: Column(
                               children: [
                                 _storySentence(
-                                    'Therefore, airlines companies around the world have to resize themselves.'),
-                                _storySentence(
-                                    'Thai Airways is one of them. So I joined the Voluntary Resignation Program'),
-                                _storySentence(
-                                    'because I think it was a good opportunity for me to try '),
-                                _storySentence(
-                                    'the other half of my interests which is programming'),
-                                _storySentence(
-                                    'since the COVID-19 is not going anywhere so soon.'),
+                                    'Therefore, airlines companies around the world have to resize themselves. Thai Airways is one of them. So I joined the Voluntary Resignation Program because I think it was a good opportunity for me to try the other half of my interests which is programming since the COVID-19 is not going anywhere so soon.'),
                                 _image('cv.jpg'),
                               ],
                             ),
@@ -353,7 +335,7 @@ class ScnStory extends StatelessWidget {
                           Container(
                             margin: EdgeInsets.all(10),
                             alignment: Alignment.center,
-                            padding: EdgeInsets.all(10),
+                            padding: EdgeInsets.all(20),
                             decoration: BoxDecoration(
                                 color: Colors.blueGrey[800],
                                 borderRadius: BorderRadius.all(
@@ -370,17 +352,7 @@ class ScnStory extends StatelessWidget {
                             child: Column(
                               children: [
                                 _storySentence(
-                                    'Luckily, a friend of mine introduced me to ERP programming which'),
-                                _storySentence(
-                                    'sounds so right to me because it requires interpersonal skills such as:'),
-                                _storySentence(
-                                    'project time management, problem-solving and communication skills'),
-                                _storySentence(
-                                    'that I acquired from my previous job. As I\'m an open-minded and fast learner,'),
-                                _storySentence(
-                                    'I truely believe I could catch up and fit in the team in no time,'),
-                                _storySentence(
-                                    'when I get the opportunity to be part of it. Thank you for reading.'),
+                                    'Luckily, a friend of mine introduced me to ERP programming which sounds so right to me because it requires interpersonal skills such as: project time management, problem-solving and communication skills that I acquired from my previous job. As I\'m an open-minded and fast learner, I truely believe I could catch up and fit in the team in no time, when I get the opportunity to be part of it. Thank you for reading.'),
                               ],
                             ),
                           ),

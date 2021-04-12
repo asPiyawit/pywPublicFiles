@@ -32,7 +32,7 @@ class ScnHome extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(20),
                   child: Image.asset(
-                    '../assets/images/contactpic.jpg',
+                    'assets/images/contactpic.jpg',
                     width: 120,
                   ),
                 ),
@@ -122,7 +122,7 @@ class ScnHome extends StatelessWidget {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(20),
                       child: Image.asset(
-                        '../assets/images/TOEIC.jpg',
+                        'assets/images/TOEIC.jpg',
                         width: 600,
                       ),
                     ),
@@ -206,7 +206,7 @@ class ScnHome extends StatelessWidget {
                         mQSize.padding.top) -
                     20,
                 width: mQSize.size.width,
-                padding: EdgeInsets.fromLTRB(80, 60, 50, 50),
+                padding: EdgeInsets.fromLTRB(30, 70, 15, 0),
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
@@ -295,7 +295,7 @@ class ScnHome extends StatelessWidget {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
-                            '../assets/images/hardworker.png',
+                            'assets/images/hardworker.png',
                           ),
                           fit: BoxFit.cover,
                         ),

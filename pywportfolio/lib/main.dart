@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Arno',
       ),
       debugShowCheckedModeBanner: false,
-      title: 'Piyawit\'s Portfolio',
+      title: 'Piyawit\'s Portfolio...',
       routes: {
         '/': (ctx) => ScnHome(),
         '/story': (ctx) => ScnStory(),
