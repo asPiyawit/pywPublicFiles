@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import './screens/myhomepage.dart';
-import './screens/scn_profile.dart';
+import 'screens/scn_home.dart';
+import 'screens/scn_story.dart';
 import './screens/scn_contact.dart';
 
 void main() => runApp(MyApp());
@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Piyawit\'s Portfolio',
       routes: {
-        '/': (ctx) => MyHomePage(),
-        '/profile': (ctx) => ScnProfile(),
+        '/': (ctx) => ScnHome(),
+        '/story': (ctx) => ScnStory(),
         '/contact': (ctx) => ScnContact(),
       },
     );

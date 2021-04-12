@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/wdg_drawer.dart';
+import '../widgets/wdg_mixedblock.dart';
 
 class ScnContact extends StatelessWidget {
   @override
@@ -62,7 +63,38 @@ class ScnContact extends StatelessWidget {
                     )
                   ],
                 ),
-                child: null,
+                child: SingleChildScrollView(
+                    child: Center(
+                  child: Column(
+                    children: [
+                      Container(
+                        width: mQSize.size.width * 0.5,
+                        child: WdgMixedBlock(
+                          Colors.purple,
+                          'online',
+                          'contact',
+                          'Email: aspiyawit@gmail.com',
+                          'LINE ID: piyawitp',
+                          'Facebook: facebook.com/piwitp',
+                        ),
+                      ),
+                      SizedBox(
+                        height: 40,
+                      ),
+                      Container(
+                        width: mQSize.size.width * 0.7,
+                        child: WdgMixedBlock(
+                          Colors.lime,
+                          'phone &',
+                          'address',
+                          'Phone: 0888068885',
+                          'Address: 164/196 LPN Romklao, Klong Sam Prawet',
+                          'Lat Krabang, Bangkok 10520',
+                        ),
+                      ),
+                    ],
+                  ),
+                )),
               ),
             ],
           ),

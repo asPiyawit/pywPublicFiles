@@ -52,8 +52,8 @@ class WdgDrawer extends StatelessWidget {
               Navigator.of(context).pushReplacementNamed('/');
             }),
             Divider(),
-            _buildMenuTile('Profile', Icons.info_outline_rounded, () {
-              Navigator.of(context).pushReplacementNamed('/profile');
+            _buildMenuTile('My Story', Icons.info_outline_rounded, () {
+              Navigator.of(context).pushReplacementNamed('/story');
             }),
             Divider(),
             _buildMenuTile('Contact Me', Icons.contact_page_outlined, () {
