@@ -129,7 +129,7 @@ class ScnStory extends StatelessWidget {
 
     Widget _storySentence(String t) {
       return Container(
-        padding: EdgeInsets.symmetric(vertical: 10),
+        padding: EdgeInsets.symmetric(vertical: 5),
         child: FittedBox(
           child: Text(
             t,
@@ -209,7 +209,7 @@ class ScnStory extends StatelessWidget {
                             BoxDecoration(border: Border.all(width: 0.5)),
                         child: Image.asset(
                           '../assets/images/profilepic.png',
-                          height: 210,
+                          height: 190,
                         ),
                       ),
                       SizedBox(height: 10),
@@ -378,7 +378,9 @@ class ScnStory extends StatelessWidget {
                                 _storySentence(
                                     'that I acquired from my previous job. As I\'m an open-minded and fast learner,'),
                                 _storySentence(
-                                    'I truely believe I could catch up and fit in the team in no time.'),
+                                    'I truely believe I could catch up and fit in the team in no time,'),
+                                _storySentence(
+                                    'when I get the opportunity to be part of it. Thank you for reading.'),
                               ],
                             ),
                           ),

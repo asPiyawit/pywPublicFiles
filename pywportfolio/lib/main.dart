@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'screens/scn_home.dart';
 import 'screens/scn_story.dart';
-import './screens/scn_contact.dart';
+import 'screens/scn_about.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (ctx) => ScnHome(),
         '/story': (ctx) => ScnStory(),
-        '/contact': (ctx) => ScnContact(),
+        '/about': (ctx) => ScnAbout(),
       },
     );
   }

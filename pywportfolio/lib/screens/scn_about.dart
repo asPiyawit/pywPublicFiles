@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../widgets/wdg_drawer.dart';
 import '../widgets/wdg_mixedblock.dart';
 
-class ScnContact extends StatelessWidget {
+class ScnAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var mQSize = MediaQuery.of(context);
@@ -68,7 +68,7 @@ class ScnContact extends StatelessWidget {
                   child: Column(
                     children: [
                       Container(
-                        width: mQSize.size.width * 0.5,
+                        width: mQSize.size.width * 0.4,
                         child: WdgMixedBlock(
                           Colors.purple,
                           'online',
@@ -79,10 +79,10 @@ class ScnContact extends StatelessWidget {
                         ),
                       ),
                       SizedBox(
-                        height: 40,
+                        height: 50,
                       ),
                       Container(
-                        width: mQSize.size.width * 0.7,
+                        width: mQSize.size.width * 0.6,
                         child: WdgMixedBlock(
                           Colors.lime,
                           'phone &',
@@ -90,6 +90,20 @@ class ScnContact extends StatelessWidget {
                           'Phone: 0888068885',
                           'Address: 164/196 LPN Romklao, Klong Sam Prawet',
                           'Lat Krabang, Bangkok 10520',
+                        ),
+                      ),
+                      SizedBox(
+                        height: 50,
+                      ),
+                      Container(
+                        width: mQSize.size.width * 0.8,
+                        child: WdgMixedBlock(
+                          Colors.teal,
+                          'development',
+                          'tools',
+                          'Language: Flutter Framework (Dart)',
+                          'IDE: Visual Studio Code',
+                          'Coder: Piyawit Prompradit',
                         ),
                       ),
                     ],
