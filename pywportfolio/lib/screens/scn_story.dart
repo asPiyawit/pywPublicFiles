@@ -352,7 +352,7 @@ class ScnStory extends StatelessWidget {
                             child: Column(
                               children: [
                                 _storySentence(
-                                    'Luckily, a friend of mine introduced me to ERP programming which sounds so right to me because it requires interpersonal skills such as: project time management, problem-solving and communication skills that I acquired from my previous job. As I\'m an open-minded and fast learner, I truely believe I could catch up and fit in the team in no time, when I get the opportunity to be part of it. Thank you for reading.'),
+                                    'Luckily, a friend of mine introduced me to ERP programming which sounds so right to me because it requires interpersonal skills such as: project time management, problem-solving and communication skills that I acquired from my previous job. As I\'m an open-minded and fast learner, I truely believe I could catch up and fit in the team in no time, when I get the opportunity to be part of it. And lastly, thank you for taking your time reading.'),
                               ],
                             ),
                           ),
